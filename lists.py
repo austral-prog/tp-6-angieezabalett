@@ -5,8 +5,12 @@ def remove_elements(list_to_remove_elements):
         return list_to_remove_elements
     del list_to_remove_elements[0]
 
-    if len(list_to_remove_elements) > 3:
-        del list_to_remove_elements[3]
+    if (len(list_to_remove_elements) == 4):
+        del list_to_remove_elements[4]
+        return list_to_remove_elements
+    elif (len(list_to_remove_elements) > 4):
+        del list_to_remove_elements[4]
+        del list_to_remove_elements[5]
         return list_to_remove_elements
     else:
         return list_to_remove_elements
